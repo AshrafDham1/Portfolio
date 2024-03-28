@@ -1,0 +1,29 @@
+ 
+  canvas {
+   position: absolute;
+   top: 0;
+
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 98vw;
+    height: 100vh;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    z-index: 0;
+    /* background-size: cover; */
+  } /* ---- stats.js ---- */
+ 
+  .js-count-particles {
+    font-size: 1.1em;
+  }
+  #stats,
+  .count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+ 

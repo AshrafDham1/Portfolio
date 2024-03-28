@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashraf Dham Portfolio</title>
+    <link rel="icon" type="image/png" href="/assets/AD.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="bento.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "5RrmSsMeCrZCklFNw",
+            });
+        })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header id="header">
+        <nav  class="topnav" id="myTopnav">
+        <a href="#">Home<span></span></a>
+            <a href="#overview">About<span></span></a>
+            <a href="#projectSection">Projects<span></span></a>
+            <a href="#conactSection">Contact me<span></span></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div id="particles-js" ></div>
+
+    <section id="homeHeroSection" >
+        
+        <div class="backgroundBlur"></div>
+        <div id="heroParagraph">
+            <h3>Hey, I'm Ashraf Dham,</h3>
+            <h1>A Front-End <span class="insideText">Web Developer</span> with a dream.</h1>
+            <h2>Let's turn your dream website into reality</h2>
+            <div id="btn-herolink">
+                <button id="contactbtn">Contact me</button>
+                <div class="heroLinkContainer">
+                    <a href="mailto:ashraf.dham08@gmail.com"><img src="/assets/icons8-email-50.png" alt="email" class="heroLinks" ></a>
+                    <a href="www.linkedin.com/in/ashraf-dham"> <img src="/assets/icons8-linkedin-50.png" alt="LinkedIn" class="heroLinks"a>
+                    <a href="https://github.com/AshrafDham1"><img src="/assets/icons8-github.svg" alt="Github" class="heroLinks"></a>
+                </div>
+                <button id="toggleModeButton" ><img src="/assets/brightness.png" alt="light mode" ></button>
+            </div>
+        </div> 
+        <div>
+            <img src="/assets/randomShape.webp" alt="random background shape" id="randomShape">
+        </div>
+        
+    </section>
+    <a href="#overview">
+        <div class="scroll-downs">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+        </div>    
+    </a>
+
+    
+
+    <section class="techSection">
+        <div id="overview">
+            <h4 id="overviewIntro">INTRODUCTION</h4>
+            <h2 id="overviewTitle">Overview<span class="dotSpan">.</span></h2>
+            <p class="overviewParagraph">Hello, I'm Ashraf Dham. I embarked on my coding journey with Python, where I discovered its versatility and power. Intrigued, I ventured into web development, immersing myself in HTML, CSS, and JavaScript.</p>
+            <p class="overviewParagraph">Today, I specialize in crafting professional websites that seamlessly combine aesthetic design with robust functionality. I believe in the power of collaboration, working closely with clients to understand their needs and goals.</p>
+            <p class="overviewParagraph">As a quick learner, I'm committed to creating efficient, scalable, and user-friendly solutions that address real-world problems. Let's collaborate and bring your ideas to life!</p>
+        </div>
+    </section>
+
+
+    <section class="techSection">
+
+        <h3 class="subtitles">Technical skills</h3>
+
+        <div id="techBtnContainer">
+            <button class="techBtn" id="AllBtn">All</button>
+            <button class="techBtn" id="frontEndBtn" >Front-End</button>
+        </div>
+            
+        <div id="TechnologiesContainer">
+                <div class="eachTechContainer frontEnd all">
+                        <img src="/assets/html.svg" alt="css" class="techPhoto " id="htmlPhoto">
+                        <h4>HTML</h4>
+                </div>
+                <div class="eachTechContainer frontEnd all">
+                    <img src="/assets/css.svg" alt="html" class="techPhoto " id="cssPhoto">
+                    <h4>CSS</h4>
+                </div>
+                <div class="eachTechContainer frontEnd all">
+                    <img src="/assets/javascript.svg" alt="JavaScript " class="techPhoto" id="jsPhoto">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="eachTechContainer all ">
+                    <img src="/assets/python.svg" alt="Python" class="techPhoto" id="pythonPhoto">
+                    <h4>Python</h4>
+                </div>
+                <div class="eachTechContainer all">
+                    <img src="/assets/c++.svg" alt="c++" class="techPhoto " id="cppPhoto">
+                    <h4>C++</h4>
+                </div>
+                <div class="eachTechContainer frontEnd all">
+                    <img src="/assets/git.svg" alt="git" class="techPhoto " id="gitPhoto">
+                    <h4>GIT</h4>
+                </div>
+                <div class="eachTechContainer all">
+                    <img src="/assets/gitHub.svg" alt="gitHub" class="techPhoto " id="githubPhoto">
+                    <h4>gitHub</h4>
+                </div>
+                <div class="eachTechContainer all">
+                    <img src="/assets/wordpress.svg" alt="wordpress" class="techPhoto" id="wordpressPhoto">
+                    <h4>wordpress</h4>
+                </div>
+        </div>
+    </section>
+
+    <section id="softSkillsContainer">
+            <h3 class="subtitles">Soft skills</h3>
+            <div class="flipContainer">
+                <div class="flip">
+                    <div class="front" >
+                        <img src="/assets/idea.png" alt="">
+                        <h1 >Problem-solving</h2>
+                    </div>
+                    <div class="back">
+                        <h3>Navigating Challenges Creatively</h3>
+                        <p>A blend of creativity and logic,enable me to find innovative solutions to technical challenges</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" >
+                        <img src="/assets/save-time.png" alt="">
+                        <h1 >Time management</h2>
+                    </div>
+                    <div class="back">
+                        <h3>Mastering the Art of Productivity</h3>
+                        <p>It involves managing time effectively also responding constructively to feedback and adjusting priorities </p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" >
+                        <img src="/assets/leadership.png" alt="">
+
+                    <h1 >leadership & Teamwork</h2>
+                    </div>
+                    <div class="back">
+                    <h3>Inspiring and Guiding Teams to Success</h3>
+                    <p>It's about taking initiative, mentoring others, and being open to feedback</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" >
+                        <img src="/assets/conversation.png" alt="">
+                        <h1 >Effective <span style="font-size: 26px;">Communication</span></h1>
+                    </div>
+                    <div class="back">
+                        <h3>The Foundation of Effective Teamwork</h3>
+                        <p> Involves not just talking but also listening, ensures that everyone is on the same page</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" >
+                        <img src="/assets/adaptation.png" alt="">
+                        <h1 >Adaptability</span></h1>
+                    </div>
+                    <div class="back">
+                        <h3>The key to stay ahead of the curve</h3>
+                        <p style="font-size: 98%;">Involves quickly reading the situations and adjusting the approach to adapt based on the situation</p>
+                    </div>
+                </div>
+            </div>    
+    </section>
+
+
+    <section id="sectionBreakers" class="separator">
+
+        <div id="separatorContainer">
+            <div id="paragraphContainer">
+                <p>"The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."</p>
+                <p>Steve Jobs</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projectSection">  
+        <div id="ProjectsTitle">
+            <h2 id="projecteTitle">All Creative Works<span class="dotSpan">.</span></h2>
+            <h4 id="projectIntro">Here's some of my projects that I have worked on:
+                <a href="projects.html" id="showAllProjects"><span id="showAllText">Show all
+                    <svg fill="#00ffffb4" height="20px"   viewBox="0 0 330 330" xml:space="preserve">
+                        <path id="XMLID_27_" d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
+                            s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
+                            c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>
+                        </svg>
+                    </span>
+                </a>
+            </h4>
+        </div>
+
+
+    </section>
+
+    <section id="bentoGridSection" >
+        <div id="bentoGrid">
+            <div class="BlockV2 flipV2" id="block1">
+                <div class="frontV2" style="background-image: url(/assets/calculator.png); background-position: top; " >
+                    <h1 class="text-shadow"></h1>
+                </div>
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/calculator.png);background-position: top;">
+                    <h2></h2>
+                    <p>Builded a functional calculator with html/css and javasript </p>
+                </div>
+            </div>
+            <div class="BlockV2 flipV2" id="block2">
+                <div class="frontV2" style="background-image: url(/assets/party.png);" >
+                    <!-- <h1 class="text-shadow">Party invitation card</hi> -->
+                </div>
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/party.png);">
+                    <h2></h2>
+                    <p>Builded a party invitation card </p>
+                </div>
+            </div>    
+            <div class="BlockV2 flipV2" id="block3">
+                <div class="frontV2" style="background-image: url(/assets/timer.png);" >
+                    <h1 class="text-shadow"></h1>
+                </div>
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/timer.png);">
+                    <h2></h2>
+                    <p>Building a stop watch to practing JavaScript</p> 
+                </div>
+            </div>
+            <div class="BlockV2 flipV2" id="block4">
+                <div class="frontV2" style="background-image: url(/assets/nasa.png);" >
+                    <h1 class="text-shadow"></h1>
+                </div>
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/nasa.png);">
+                    <h2></h2>
+                    <p> Builded a one page website to practice the navigation in the same page </p>
+                </div>
+            
+            </div>
+            <div class="BlockV2 flipV2" id="block5">
+                <div class="frontV2" style="background-image: url(/assets/faq.png);" >
+                    <h1 class="text-shadow"></hi>
+                </div>
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/faq.png);">
+                    <h2></h2>
+                    <p>Builded a frequently asked question section with javascript to practice building  accordion components </p>
+            </div>         
+            </div>
+            <div class="BlockV2 flipV2" id="block6">
+                <div class="frontV2" style="background-image: url(/assets/heart.png);" >
+                    <h1 class="text-shadow"></hi>
+                </div>
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/heart.png);">
+                    <h2></h2>
+                    <p>Builded a beeting heart to practice the use of before & after </p>
+                </div>
+            </div>
+            <div class="BlockV2 flipV2" id="block7"> 
+                <div class="frontV2" style="background-image: url(/assets/WordpressMockup.png);" >
+                <!-- <h1 class="text-shadow">Wordpress Website</h1> -->
+            </div>
+            <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/WordpressMockup.png);">
+                <h2> </h2>
+                <p> builded a Wordpress Website for a local christmas market to showcase the menu and special activity,with the team behind it and their goal.</p>
+            </div>
+            </div>
+            <div class="BlockV2 flipV2" id="blockx">
+                <div class="frontV2" style="background-image: url(/assets/uaeMockup.png);" >
+                    <!-- <h1 class="text-shadow">Guide to United Arab Emirates</hi> -->
+                </div>
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/uaeMockup.png);">
+                    <h2></h2>
+                    <p>Builded a full website about UAE showcasing it's location,attractions,culture, achivments and eents. Using HTML,CSS,javascript</p>
+                </div>
+            </div>
+            <div class="BlockV2 flipV2" id="blocky">
+                <div class="frontV2" style="background-image: url(/assets/valentine.png);" >
+                    <!-- <h1 class="text-shadow">Valentine Card</hi> -->
+                </div>
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/valentine.png);">
+                    <h2></h2>
+                    <p>Share it with your loved one and enjoy the reaction while navigating through the different pages on the website and the surprises inside.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div id="sectionBtnContainer">
+            <div id="techBtnContainer">
+                <button id="addSectionButton" class="techBtn" >Show more</button>
+                <button id="removeSectionButton"class="techBtn" >Show less</button>
+            </div>
+        </div> -->
+        <section id="newSectionContainer" style="background-color: #090F1C; padding:0; margin: 0;"></section>
+    </section>
+
+
+
+    <section id="conactSection">
+        <h1 style="margin-bottom: 10px;"  id="contactTitle">Get in touch<span class="dotSpan">.</span></h1>
+        <hr id="contactHr">
+        <div id="formSection">
+
+            <div class="contactContainer">
+                <form action="#" class="contactForm">
+                    <input type="text" name="name" placeholder="Enter your name" class="contactInput" id="contactName" required>
+                    <input type="email" name="email" placeholder="Enter your email" class="contactInput" id="contactEmail" required>
+                    <textarea name="message" id="ContactText"  placeholder="Your message" class="contactInput" required></textarea>
+                    <button type="submit" id="submitBtn"class="buttons" onclick="sendMail()">Submit</button>
+                </form>
+            </div>
+
+            <div class="contactLinkContainer">
+                <div class="contactLinks">
+                    <img src="/assets/icons8-email-48.png" alt="email"><h2><a href="mailto:ashraf.dham08@gmail.com"> ashraf.dham08@gmail.com</a>
+                </div>   
+                <div class="contactLinks">
+                    <img src="/assets/icons8-linkedin-50.png" alt="linkedIn"><h2><a href="www.linkedin.com/in/ashraf-dham"> AshrafDham</a>
+                </div>      
+                <div class="contactLinks">
+                    <img src="/assets/icons8-github-64.png" alt="Github"><h2><a href="https://github.com/AshrafDham1"> AshrafDham1</a>
+                </div> 
+            
+            </div>       
+        </div>
+        <hr>
+        <footer id="footer">
+            <h3>&copy; 2024 Ashraf Dham. All rights reserved.</h3>
+        </footer>
+    </section>
+
+
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="animation.js"></script>
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
