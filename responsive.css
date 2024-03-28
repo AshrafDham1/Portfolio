@@ -1,0 +1,118 @@
+/* Styles for screens up to 480px width for mobile */
+@media only screen and (max-width: 480px) {
+    body{
+        font-size: 80%;
+    }
+    #randomShape{display: none;}
+    #overviewTitle{font-size: 30px}
+    #overviewIntro{font-size: 18px;}
+    .subtitles{font-size: 22px;}
+    #paragraphContainer p{font-size: 19px !important;}
+    #bentoGrid{grid-template-areas: 
+        "block1 block2" 
+        "block3 block4" 
+        "block5 block6" 
+        "block7 blockx" 
+        "blocky" ;
+    border-radius: 5px;}
+    .projects{flex-direction: column-reverse;}
+    .projectPhoto{width: 100%;height: 90%;}
+    .textAfter{width: 100%;}
+    .projectHeader{margin-bottom: 5px;}
+    #christmasMarketProject{flex-direction: column;margin-top: 70px;}
+    #formSection{padding: 1rem 1rem;margin-top: 1rem;}
+    form{width: 85vw;}
+    .contactInput{width:calc(85vw - 25px);}
+}
+
+/* Styles for screens between 481px and 768px width for tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #randomShape{display: none;}
+    #paragraphContainer p{font-size: 21px !important;}
+    #formSection{padding: 1rem 1rem;margin-top: 1rem;}
+    form{width: 80vw;}
+    .contactInput{width:calc(80vw - 25px);}
+    .projects{flex-direction: column-reverse;}
+    .projectPhoto{width: 100%;height: 90%;}
+    .textAfter{width: 100%;}
+    .projectHeader{margin-bottom: 5px;}
+    #christmasMarketProject{flex-direction: column;margin-top: 70px;}
+    #formSection{padding: 1rem 1rem;margin-top: 1rem;}
+    .topnav{align-items: center;justify-content: center;line-height: 75px;}
+}
+@media only screen and (min-width: 650px) and (max-width: 830px) {#toggleModeButton{top: 100px;}}
+/* @media only screen and (min-width: 650px) and (max-width: 1030px) {#toggleModeButton{top: 100px;}} */
+
+/* Styles for screens between 769px and 1024px width for laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #toggleModeButton{top: 100px;}
+    #paragraphContainer p{font-size: 24px !important;}
+    .projects{flex-direction: column-reverse;}
+    .projectPhoto{width: 90%;height: 90%; margin-left: 2.5%;}
+    .textAfter{width: 90%;margin-left: 2.5%;}
+    .projectHeader{margin-bottom: 5px;}
+    #christmasMarketProject{flex-direction: column;margin-top: 70px;}
+    #formSection{padding: 1rem 1rem;margin-top: 1rem;}
+    form{width: 85vw;}
+    .contactInput{width:calc(65vw - 25px);}
+    .topnav{align-items: center;justify-content: center;line-height: 75px;}
+    #toggleModeButton{top: 20px;}
+}
+/* @media only screen and (min-width: 660px) and (max-width: 870px) {
+    #toggleModeButton{top: 0;}
+} */
+
+/* Styles for screens between 1025px and 1200px width for large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #paragraphContainer p{font-size: 26px !important;}
+    .topnav{align-items: center;justify-content: center;line-height: 75px;}
+    .projectPhoto{height: 30vh;width: 40vw;}
+    .textAfter{width: 40vw;} 
+    .projectHeader{margin-top: 0;}
+    .topnav{align-items: center;justify-content: center;line-height: 75px;}
+} 
+@media only screen and (min-width: 1200px)  {
+    .topnav{line-height: 60px;}
+#formSection{margin-top: 50px;align-items: flex-start;}
+.contactForm{margin-left: -100px;}
+}
+@media screen and (max-width: 650px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+        width: 87vw;
+        margin: 0;
+    
+    }
+    .topnav.responsive {
+        flex-direction: column;
+        justify-content:  end;
+        position: relative;
+        align-items: start;
+        display: flex; 
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+    }
+    #header{
+        width: calc(100vw - 80px);
+        height: fit-content;
+        position: absolute;
+        z-index: 10000;
+        display: block;
+    }
+    #toggleModeButton{top: 100px;}
+}  
