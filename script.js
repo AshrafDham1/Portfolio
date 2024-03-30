@@ -2,31 +2,31 @@
 
 var contactbtn = document.getElementById("contactbtn");
 
-contactbtn.addEventListener("click", function() {
+contactbtn.addEventListener("click", function () {
     window.location.href = "#conactSection";
 }
 );
 
 
 const allTech = document.querySelectorAll(".all");
-const allBtn= document.getElementById("AllBtn")
-allBtn.addEventListener("click" ,function() {
+const allBtn = document.getElementById("AllBtn")
+allBtn.addEventListener("click", function () {
     // console.log("all")
-    allTech.forEach(function(element) {
-        element.style.visibility = "visible"; 
+    allTech.forEach(function (element) {
+        element.style.visibility = "visible";
         element.style.position = "relative";
     })
 })
 
 const frontEndTech = document.querySelectorAll(".frontEnd");
-const frontEndBtn= document.getElementById("frontEndBtn")
-frontEndBtn.addEventListener("click" ,function() {
+const frontEndBtn = document.getElementById("frontEndBtn")
+frontEndBtn.addEventListener("click", function () {
     // console.log("Frontend")
-    allTech.forEach(function(elements) {
+    allTech.forEach(function (elements) {
         elements.style.visibility = "hidden";
         elements.style.position = "absolute";
     })
-    frontEndTech.forEach(function(element) {
+    frontEndTech.forEach(function (element) {
         element.style.visibility = "visible";
         element.style.position = "relative";
 
@@ -61,7 +61,7 @@ Array.from(allBlock).forEach((block, index) => {
 // function addNewSection() {
 //     const newSection = document.createElement('section');
 //     newSection.id = 'newSection';
-    
+
 //     newSection.innerHTML = `
 //     <div Id="projectContainer"> 
 
@@ -111,8 +111,8 @@ Array.from(allBlock).forEach((block, index) => {
 
 const toggleModeButton = document.getElementById('toggleModeButton');
 const rootElement = document.documentElement;
-let numberOfClick=0;
-toggleModeButton.addEventListener('click', function() {
+let numberOfClick = 0;
+toggleModeButton.addEventListener('click', function () {
     if (rootElement.getAttribute('data-theme') === 'light') {
         rootElement.setAttribute('data-theme', 'dark');
     } else {
@@ -121,12 +121,12 @@ toggleModeButton.addEventListener('click', function() {
     numberOfClick++
     console.log(numberOfClick)
 
-    if (numberOfClick%2!= 0) {
+    if (numberOfClick % 2 != 0) {
         toggleModeButton.innerHTML = '<img src="/assets/night-mode.png" alt="night mode">';
-        toggleModeButton.style.backgroundColor="#e4eaf6"
-    }else{
+        toggleModeButton.style.backgroundColor = "#e4eaf6"
+    } else {
         toggleModeButton.innerHTML = '<img src="/assets/brightness.png" alt="night mode">';
-        toggleModeButton.style.backgroundColor="#090F1C"
+        toggleModeButton.style.backgroundColor = "#090F1C"
     }
 
 });
@@ -135,7 +135,7 @@ function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
-    } 
+    }
     else {
         x.className = "topnav";
     }

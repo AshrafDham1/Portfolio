@@ -32,7 +32,7 @@ body{
     font-family: "Poppins" ;
     color: #fff;
     /* background-color: #07090d; */
-    
+    overflow-x: hidden;
 
 }
 #header{
@@ -498,7 +498,7 @@ nav a:hover span{
 #toggleModeButton{
     background-color: #090F1C;
     z-index: 200;
-    font-size: 1.2em; 
+    /* font-size: 0.6em;  */
     border-radius: 50%;
     border: none; 
     cursor: pointer; 
@@ -512,7 +512,10 @@ nav a:hover span{
 padding-left: 10px;
 padding-right: 10px;
 }
-
+#toggleModeButton img{
+    width: 45px;
+    height: 45px;
+}
 #contactTitle{
     font-size: 60px;
     padding-top: 1rem;
@@ -570,9 +573,25 @@ padding-right: 10px;
     100% { transform: translateY(15px); opacity: 0;}
 }
 
-
-/* @media only screen and (min-width: 600px) {
-    body{
-        font-size: 80%;
+.overviewParagraph{
+    animation: fade linear, move linear;
+    animation-timeline: view();
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
     }
-} */
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes move {
+    0% {
+        transform: translateX(-200px);
+        filter: blur(5px);
+    }
+    30% {
+        transform: translateX(0px);
+        filter: blur(0px);
+    }
+}
