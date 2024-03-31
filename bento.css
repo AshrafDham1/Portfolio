@@ -7,6 +7,7 @@
 }
 
 #bentoGrid {
+    box-sizing: border-box !important;
     display: grid;
     padding: 40px 6rem;
     grid-template-areas: 
@@ -15,7 +16,7 @@
     "block6 block6 blocky block7 block7";
     gap: 20px; 
     grid-template-rows: 150px 200px 200px;
-    grid-template-columns: 0.7fr 1fr 1 fr 1fr 200px;
+    grid-template-columns: 0.7fr 1fr 1fr 1fr 200px;
     background-color: var(--bg-color);
 
 }
@@ -62,6 +63,9 @@
 #bentoGridSection{
     box-sizing: border-box!important;
     background-color: var(--bg-color);
+    width: 100% !important;
+    /* display: flex !important; */
+    /* justify-content : center !important; */
 }
 
 

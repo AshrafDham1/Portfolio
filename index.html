@@ -256,9 +256,9 @@
                 <div class="frontV2" style="background-image: url(/assets/faq.png);" >
                     <h1 class="text-shadow"></hi>
                 </div>
-                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/faq.png);">
+                <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/faq.png); padding-left: 0%;">
                     <h2></h2>
-                    <p>Builded a frequently asked question section with javascript to practice building  accordion components </p>
+                    <p style="padding-left: 0;padding-right: 0%;">Builded a frequently asked question section with javascript to practice building  accordion components </p>
             </div>         
             </div>
             <div class="BlockV2 flipV2" id="block6">
@@ -267,7 +267,7 @@
                 </div>
                 <div class="backV2" style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/assets/heart.png);">
                     <h2></h2>
-                    <p>Builded a beeting heart to practice the use of before & after </p>
+                    <p >Builded a beeting heart to practice the use of before & after </p>
                 </div>
             </div>
             <div class="BlockV2 flipV2" id="block7"> 
@@ -313,12 +313,13 @@
         <div id="formSection">
 
             <div class="contactContainer">
-                <form action="#" class="contactForm">
+                <form action="#" class="contactForm" id="emailForm">
                     <input type="text" name="name" placeholder="Enter your name" class="contactInput" id="contactName" required>
                     <input type="email" name="email" placeholder="Enter your email" class="contactInput" id="contactEmail" required>
                     <textarea name="message" id="ContactText"  placeholder="Your message" class="contactInput" required></textarea>
-                    <button type="submit" id="submitBtn"class="buttons" onclick="sendMail()">Submit</button>
+                    <button type="submit" id="submitBtn"class="buttons" >Submit</button>
                 </form>
+                <!-- onclick="sendMail()" -->
             </div>
 
             <div class="contactLinkContainer">
